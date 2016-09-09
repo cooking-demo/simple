@@ -19,6 +19,7 @@ cooking.set({
     'vendor', // entry 里定义的入口文件，也就是会将 vue 单独打包
     'manifest' // 这个并没有在 entry 里声明的会将所有公用部分打包，也就是 webpack runtime
   ],
+  publicPath: '/dist/', // 打包后的资源文件相对于 url 的路径
   extends: ['vue2', 'lint']
 });
 
